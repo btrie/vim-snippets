@@ -53,7 +53,8 @@ snippet if "if (condition) { ... }"
 snippet ife "if (condition) { ... } else { ... }"
 	if (${1:true}) {
 		${0:${VISUAL}}
-	} else {
+	}
+	else {
 		${2}
 	}
 # tertiary conditional
@@ -76,15 +77,18 @@ snippet case "case 'xyz': ... break"
 snippet try "try { ... } catch(e) { ... }"
 	try {
 		${0:${VISUAL}}
-	} catch (${1:e}) {
+	}
+	catch (${1:e}) {
 		${2:/* handle error */}
 	}
 snippet tryf "try { ... } catch(e) { ... } finally { ... }"
 	try {
 		${0:${VISUAL}}
-	} catch (${1:e}) {
+	}
+	catch (${1:e}) {
 		${2:/* handle error */}
-	} finally {
+	}
+	finally {
 		${3:/* be executed regardless of the try / catch result*/}
 	}
 # throw Error
